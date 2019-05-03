@@ -19,7 +19,7 @@ public class Roll : MonoBehaviour {
     }
 
     public void DoRoll() {
-        transform.position = new Vector3(startX, 2, 0);
+        transform.position = new Vector3(startX, 3, 0);
         transform.rotation = Random.rotation;
         Rigidbody rb = GetComponent<Rigidbody>();
         Vector3 vel = new Vector3(Random.Range(-4, 4), Random.Range(-10, 5), Random.Range(-10, -8) );

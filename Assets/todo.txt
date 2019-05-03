@@ -1,3 +1,1 @@
-fix die landing on vertex
-
-audio controls
+add close button back, add mute button, display text for roll
