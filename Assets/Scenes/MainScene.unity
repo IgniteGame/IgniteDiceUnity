@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 46713297}
   - component: {fileID: 46713296}
   - component: {fileID: 46713298}
+  - component: {fileID: 46713299}
   m_Layer: 0
   m_Name: Damage Die
   m_TagString: Untagged
@@ -141,7 +142,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46713291}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0c538ffa2e4f3f847839043b17912c4a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -227,7 +228,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46713291}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -247,6 +248,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eea62aafc71f2543b7f78b4b3958296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &46713299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46713291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a2b2942eb195324ca1ed8f658401dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logger: {fileID: 1638158986}
+  dieName: Damage
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,8 +964,8 @@ GameObject:
   - component: {fileID: 895051841}
   - component: {fileID: 895051840}
   m_Layer: 0
-  m_Name: Floor
-  m_TagString: Untagged
+  m_Name: Ground
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1043,6 +1058,7 @@ GameObject:
   - component: {fileID: 1433640111}
   - component: {fileID: 1433640110}
   - component: {fileID: 1433640109}
+  - component: {fileID: 1433640116}
   m_Layer: 0
   m_Name: Target Die
   m_TagString: Untagged
@@ -1083,7 +1099,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433640108}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1098,7 +1114,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433640108}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0c538ffa2e4f3f847839043b17912c4a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1163,6 +1179,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1433640116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433640108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a2b2942eb195324ca1ed8f658401dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logger: {fileID: 1638158986}
+  dieName: Target
 --- !u!1 &1638158982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,6 +1204,7 @@ GameObject:
   - component: {fileID: 1638158984}
   - component: {fileID: 1638158983}
   - component: {fileID: 1638158985}
+  - component: {fileID: 1638158986}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1301,6 +1332,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b02000558fc772945bbae4b34c0a9f8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1638158986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638158982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 409dd74f34016494e959c2c26c6fbef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2088724341
