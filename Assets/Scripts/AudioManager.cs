@@ -17,11 +17,10 @@ public class AudioManager : MonoBehaviour {
         GameObject volumeButton = GameObject.Find("VolumeButton");
         volumeImage = volumeButton.GetComponent<Image>();
     }
-    void Update() {
-        if (Input.GetKeyDown("space") || Input.GetMouseButtonDown(0) ) {
-            if(!isMuted) {
-                audio.Play(0);
-            }
+
+    public void PlayAudio() {
+        if(!isMuted) {
+            audio.Play(0);
         }
     }
 

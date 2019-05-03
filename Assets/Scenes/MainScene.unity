@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 46713299}
   m_Layer: 0
   m_Name: Damage Die
-  m_TagString: Untagged
+  m_TagString: DamageDie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1190,7 +1190,7 @@ GameObject:
   - component: {fileID: 1433640116}
   m_Layer: 0
   m_Name: Target Die
-  m_TagString: Untagged
+  m_TagString: TargetDie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1334,6 +1334,7 @@ GameObject:
   - component: {fileID: 1638158983}
   - component: {fileID: 1638158986}
   - component: {fileID: 1638158985}
+  - component: {fileID: 1638158987}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1477,6 +1478,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 409dd74f34016494e959c2c26c6fbef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1638158987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638158982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04bfc5937bec2f543a0a65f2b8c1184e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetDie: {fileID: 1433640108}
+  damageDie: {fileID: 46713291}
 --- !u!1 &2088724341
 GameObject:
   m_ObjectHideFlags: 0

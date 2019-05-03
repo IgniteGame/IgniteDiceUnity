@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour {
     Roll targetDieRollScript;
     Roll damageDieRollScript;
 
+    AudioManager audioManagerScript;
+
     void Start() {
         //targetDieRollScript = (Roll) GameObject.Find("TargetDie").GetComponent(typeof(Roll) );
         //damageDieRollScript = (Roll)GameObject.Find("DamageDie").GetComponent(typeof(Roll) );
@@ -20,6 +22,14 @@ public class GameManager : MonoBehaviour {
         targetDieRollScript = (Roll) targetDie.GetComponent(typeof(Roll));
         damageDieRollScript = (Roll) damageDie.GetComponent(typeof(Roll) );
 
+        audioManagerScript = GetComponent<AudioManager>();
+
+    }
+
+    void HandleRolls() {
+        targetDieRollScript.DoRoll();
+        damageDieRollScript.DoRoll();
+        audioManagerScript.PlayAudio();
     }
 
     void Update() {
@@ -34,14 +44,12 @@ public class GameManager : MonoBehaviour {
         #if UNITY_STANDALONE || UNITY_EDITOR
         // Desktop
         if ( (Input.GetMouseButtonUp(0) && validInput) || Input.GetKeyDown("space") ) {
-            targetDieRollScript.DoRoll();
-            damageDieRollScript.DoRoll();
+            HandleRolls();
         }
         #else
         // Mobile
         if ( (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended && validInput) || Input.GetKeyDown("space") ) {
-            targetDieRollScript.DoRoll();
-            damageDieRollScript.DoRoll();
+            HandleRolls();
         }
         #endif
     }
