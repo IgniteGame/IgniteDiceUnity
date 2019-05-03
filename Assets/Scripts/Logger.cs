@@ -13,11 +13,9 @@ public class Logger : MonoBehaviour {
     static int targetSide= -1;
 
     // reset bools on roll
-    void Update() {
-        if (Input.GetKeyDown("space") || Input.GetMouseButtonDown(0) ) {
-            // wait for 1s before ready for result of die, avoids false positives
-            StartCoroutine(ResetBools() );
-        }
+    public void OnRoll() {
+        // wait for 1s before ready for result of die, avoids false positives
+        StartCoroutine(ResetBools() );
     }
 
     IEnumerator ResetBools() {

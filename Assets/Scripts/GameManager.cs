@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour {
     Roll damageDieRollScript;
 
     AudioManager audioManagerScript;
+    Logger loggerScript;
 
     void Start() {
         //targetDieRollScript = (Roll) GameObject.Find("TargetDie").GetComponent(typeof(Roll) );
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour {
         damageDieRollScript = (Roll) damageDie.GetComponent(typeof(Roll) );
 
         audioManagerScript = GetComponent<AudioManager>();
+        loggerScript = GetComponent<Logger>();
 
     }
 
@@ -30,6 +32,7 @@ public class GameManager : MonoBehaviour {
         targetDieRollScript.DoRoll();
         damageDieRollScript.DoRoll();
         audioManagerScript.PlayAudio();
+        loggerScript.OnRoll();
     }
 
     void Update() {
