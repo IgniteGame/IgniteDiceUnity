@@ -1016,7 +1016,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d7f97e02a7cc3c14bada9e95cf9eba99, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d2f06eba537232b47b12f8cb6a8209a1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1464,7 +1464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeOnSprite: {fileID: 21300000, guid: 5220d896c155d1e469e2536f3c31f6b3, type: 3}
-  volumeOffSprite: {fileID: 21300000, guid: 70770eae9deca1c4ca51f08025152a08, type: 3}
+  volumeOffSprite: {fileID: 21300000, guid: 22e5b12d28d509348b559fcf413f9ef4, type: 3}
 --- !u!114 &1638158986
 MonoBehaviour:
   m_ObjectHideFlags: 0
