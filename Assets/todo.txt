@@ -1,1 +1,0 @@
-add close button back, add mute button, display text for roll
