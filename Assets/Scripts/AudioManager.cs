@@ -14,7 +14,7 @@ public class AudioManager : MonoBehaviour {
 
     void Start() {
         audio = GetComponent<AudioSource>();
-        GameObject volumeButton = GameObject.FindGameObjectsWithTag("VolumeButton")[0];
+        GameObject volumeButton = GameObject.Find("VolumeButton");
         volumeImage = volumeButton.GetComponent<Image>();
     }
     void Update() {

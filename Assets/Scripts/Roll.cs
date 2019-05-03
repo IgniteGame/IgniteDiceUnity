@@ -9,14 +9,14 @@ public class Roll : MonoBehaviour {
         DoRoll();
     }
 
-    void Update() {
+/*    void Update() {
         if(Input.GetKeyDown("space") || Input.GetMouseButtonDown(0) ) {
             DoRoll();
         }
         if (Input.GetKeyDown("escape") ) {
             Application.Quit();
         }
-    }
+    }*/
 
     public void DoRoll() {
         transform.position = new Vector3(startX, 3, 0);
