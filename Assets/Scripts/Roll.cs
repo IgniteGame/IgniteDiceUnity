@@ -22,7 +22,9 @@ public class Roll : MonoBehaviour {
         transform.position = new Vector3(startX, 2, 0);
         transform.rotation = Random.rotation;
         Rigidbody rb = GetComponent<Rigidbody>();
-        rb.velocity = new Vector3(Random.Range(-3, 3), Random.Range(-10, 5), Random.Range(-5, 0) );
+        Vector3 vel = new Vector3(Random.Range(-4, 4), Random.Range(-10, 5), Random.Range(-10, 0) );
+        rb.velocity = vel;
+        Debug.Log(vel);
     }
 
 }

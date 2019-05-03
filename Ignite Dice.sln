@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignite Dice", "Ignite Dice.csproj", "{A829349B-BAA4-9B47-EB97-BCA437AA1602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignite Dice", "Ignite Dice.csproj", "{A829349B-BAA4-9B47-EB97-BCA437AA1602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignite Dice", "Ignite Dice.csproj", "{A829349B-BAA4-9B47-EB97-BCA437AA1602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignite Dice.Editor", "Ignite Dice.Editor.csproj", "{74782670-C659-BAD1-0A3A-965AFB4FCDD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignite Dice.Editor", "Ignite Dice.Editor.csproj", "{74782670-C659-BAD1-0A3A-965AFB4FCDD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignite Dice.Editor", "Ignite Dice.Editor.csproj", "{74782670-C659-BAD1-0A3A-965AFB4FCDD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A829349B-BAA4-9B47-EB97-BCA437AA1602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A829349B-BAA4-9B47-EB97-BCA437AA1602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A829349B-BAA4-9B47-EB97-BCA437AA1602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A829349B-BAA4-9B47-EB97-BCA437AA1602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A829349B-BAA4-9B47-EB97-BCA437AA1602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A829349B-BAA4-9B47-EB97-BCA437AA1602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A829349B-BAA4-9B47-EB97-BCA437AA1602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A829349B-BAA4-9B47-EB97-BCA437AA1602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A829349B-BAA4-9B47-EB97-BCA437AA1602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A829349B-BAA4-9B47-EB97-BCA437AA1602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A829349B-BAA4-9B47-EB97-BCA437AA1602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A829349B-BAA4-9B47-EB97-BCA437AA1602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74782670-C659-BAD1-0A3A-965AFB4FCDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74782670-C659-BAD1-0A3A-965AFB4FCDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74782670-C659-BAD1-0A3A-965AFB4FCDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74782670-C659-BAD1-0A3A-965AFB4FCDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74782670-C659-BAD1-0A3A-965AFB4FCDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74782670-C659-BAD1-0A3A-965AFB4FCDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74782670-C659-BAD1-0A3A-965AFB4FCDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74782670-C659-BAD1-0A3A-965AFB4FCDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74782670-C659-BAD1-0A3A-965AFB4FCDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74782670-C659-BAD1-0A3A-965AFB4FCDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74782670-C659-BAD1-0A3A-965AFB4FCDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74782670-C659-BAD1-0A3A-965AFB4FCDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
