@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Logger : MonoBehaviour {
 
@@ -11,6 +12,13 @@ public class Logger : MonoBehaviour {
     // store die results for later
     static int damageSide = -1;
     static int targetSide= -1;
+
+    static Text text;
+
+    void Start() {
+        text = (Text) GameObject.Find("Text").GetComponent<Text>();
+        text.text = "";
+    }
 
     // reset bools on roll
     public void OnRoll() {
@@ -42,7 +50,7 @@ public class Logger : MonoBehaviour {
         }
 
         if(!readyForDamage && !readyForTarget && !done) { // both values recieved and haven't done this for this roll
-            Debug.Log("Hit " + targetNames[targetSide-1] + " with a " + damageNames[damageSide - 1] + "Explosion");
+            text.text = "Hit " + targetNames[targetSide-1] + " with a " + damageNames[damageSide - 1] + " Explosion";
             done = true;
         }
     }
