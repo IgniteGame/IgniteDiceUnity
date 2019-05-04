@@ -5,7 +5,10 @@ public class Roll : MonoBehaviour {
 
     public float startX;
 
+    ParticleSystem explosion;
+
     void Start() {
+        explosion = transform.GetChild(0).gameObject.GetComponent<ParticleSystem>();
         DoRoll();
     }
 
@@ -25,6 +28,7 @@ public class Roll : MonoBehaviour {
         Vector3 vel = new Vector3(Random.Range(-4, 4), Random.Range(-10, 5), Random.Range(-10, -8) );
         rb.velocity = vel;
         //Debug.Log(vel);
+        explosion.Play();
     }
 
 }
