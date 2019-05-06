@@ -1,3 +1,0 @@
-use player prefs to store mute setting
-
-add splash screen, icon, etc
