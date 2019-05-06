@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 00000000000000000000000000000000
+  productGUID: 8e1a5a5307a96f946bdfacc71287460f
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -698,7 +698,7 @@ PlayerSettings:
   apiCompatibilityLevel: 2
   cloudProjectId: 30365ac4-fd5c-4a01-a060-d71ef0545d69
   framebufferDepthMemorylessMode: 0
-  projectName: EffectsExamples
+  projectName: Ignite Dice
   organizationId: justingolden21
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
