@@ -5,3 +5,7 @@ Sources:
 		FontAwesome: https://fontawesome.com/
 	Fonts:
 		Roboto: https://fonts.google.com/specimen/Roboto
+	Shaders:
+		Lava: https://assetstore.unity.com/packages/vfx/shaders/lava-flowing-shader-33635
+	Particles:
+		Fireball: https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-particle-pack-127325
