@@ -24,6 +24,7 @@ public class Logger : MonoBehaviour {
     public void OnRoll() {
         // wait for 1s before ready for result of die, avoids false positives
         StartCoroutine(ResetBools() );
+        text.text = "";
     }
 
     IEnumerator ResetBools() {
