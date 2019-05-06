@@ -9,7 +9,6 @@ public class Roll : MonoBehaviour {
 
     void Start() {
         explosion = transform.GetChild(0).gameObject.GetComponent<ParticleSystem>();
-        DoRoll();
     }
 
 /*    void Update() {

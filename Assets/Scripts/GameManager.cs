@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour {
         audioManagerScript = GetComponent<AudioManager>();
         loggerScript = GetComponent<Logger>();
 
+        HandleRolls(); // roll on start
     }
 
     void HandleRolls() {

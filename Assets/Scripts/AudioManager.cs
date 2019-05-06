@@ -16,6 +16,10 @@ public class AudioManager : MonoBehaviour {
         audio = GetComponent<AudioSource>();
         GameObject volumeButton = GameObject.Find("VolumeButton");
         volumeImage = volumeButton.GetComponent<Image>();
+
+        if(PlayerPrefs.GetInt("Volume")==0) {
+            Mute();
+        }
     }
 
     public void PlayAudio() {
@@ -35,11 +39,13 @@ public class AudioManager : MonoBehaviour {
     void Mute() {
         isMuted = true;
         volumeImage.sprite = volumeOffSprite;
+        PlayerPrefs.SetInt("Volume", 0);
     }
 
     void Unmute() {
         isMuted = false;
         volumeImage.sprite = volumeOnSprite;
+        PlayerPrefs.SetInt("Volume", 1);
     }
 
 }
